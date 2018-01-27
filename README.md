@@ -1,4 +1,4 @@
-# 01a-Exercises-Arithmetic
+# 01a-Exercises-Functions-and-Dictionaries
 
 Here are some exercises to help you learn about Python functions, sets, and dictionaries. This is the second set of exercises for ILS-Z399. To complete these exercises:
 
