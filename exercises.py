@@ -18,7 +18,7 @@ for e in example_list:
 print(s)
 #
 # What do these five lines of code do?
-#
+# These five lines add each element in the list.
 
 # --------------------------------------------------
 
@@ -33,15 +33,15 @@ example_set = example_set - example_set_2
 print(example_set)
 set_to_list = list(example_set)
 print(set_to_list)
-#
-#
-#
-#
-#
+# {1, 2, 3, 4}
+# 3 is in the set
+# 4 is in the set
+# {1, 2, 3}
+# (1, 2, 3)
 # What qualities of a python set do you see in the (above) example?
-#
+# The set includes only numbers that weren't repeated.
 # In what situations might a python set be a useful data structure?
-#
+# When you want to count a number or object once, but it appears multiple times, a set would be useful.
 
 # --------------------------------------------------
 
@@ -55,15 +55,15 @@ students = ['James','Paige','George','Ruth','Gwen','Claire']
 example_dictionary['students'] = students
 print(example_dictionary)
 print(example_dictionary['students'][2])
-#
-#
-#
-#
-#
+# {'class': 'Z-399', 'teacher': 'Jason Francis', 'time': 9.0, 5: 12345}
+# 12345
+# {'class': 'Z-399', 'teacher': 'Jason Francis', 'time': '9:00', 5: 12345}
+# {'class': 'Z-399', 'teacher': 'Jason Francis', 'time': '9:00', 5: 12345, 'students': ['James', 'Paige', 'George', 'Ruth', 'Gwen', 'Claire']}
+# George
 # What qualities of a python dictionary do you see in the (above) example?
-#
+# It utilizes keys and it is in an undetermined order.
 # Write a python dictionary that might describe a bicycle. I'll get you started. Think about what qualities a bicycle could have (top speed, mileage, pedals, seat height, etc)
-bicycle = { 'color':'', 'wheels':[] }
+bicycle = { 'color':'red', 'wheels':['front', 'back'], 'speed':90, 'basket':True, 'pedals':['left', 'right'], 'price': 700, 'owner':''}
 
 # --------------------------------------------------
 
@@ -77,11 +77,11 @@ r = product_list([1,2,3])
 print(r)
 print(product_list([2,5,6]))
 print(product_list([-2,3,-4,5,-6]))
-#
-#
-#
+#6
+#60
+#-720
 # What is happening in the (above) example?
-#
+# elements of the list are being added and multiplied.
 
 # --------------------------------------------------
 
@@ -108,18 +108,18 @@ for y in years:
 		print(str(y) + ': I get an extra day this year!')
 	else:
 		print(str(y) + ': Just 365 for me')
-#
-#
-#
-#
-#
-#
+# 2017: Just 365 for me
+# 2018: Just 365 for me
+# 2000: I get an extra day this year!
+# 2100: Just 365 for me
+# 2400: I get an extra day this year!
+# This isn't even a year: Just 365 for me
 # What is happening in the (above) example?
-#
+# The method checks if the year is a leap year by modulus.
 # What is the purpose for the multi-line comment at the beginning of the is_leap_year function?
-#
+# This is a doc string explaining what a leap year is
 # What happens if you pass a value to the function that isn't a year? Why?
-#
+# It returns leap as false because it isn't a year.
 
 # --------------------------------------------------
 
@@ -145,24 +145,24 @@ for i in range(0,10):
 		print('%d: buzz'%i)
 	else:
 		print(i)
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
+# 0: fizzbuzz
+# 1
+# 2: buzz
+# 3: fizz
+# 4: buzz
+# 5
+# 6: fizzbuzz
+# 7
+# 8: buzz
+# 9: fizz
 # What is happening in this example?
-#
+# This tests whether an object is divisible by 3 or 2 without any remainder. 
 # How would you alter the program so that it prints fizz on multiples of 5 and buzz on multiples of 4?
-#
+# Simpky change the numbers in the if statement from 3 to 5 and 2 to 4.
 # We actually don't want the program to print fizzbuzz when i <= 0. How would you fix this problem?
-#
+# and not 0 could be placed at the if statements of the modulus
 # How would you alter the program so that it prints your name whenever both conditions are met?
-#
+# change the first line the the for statement from print 'fizzbuzz' to print('Tanner')
 
 # --------------------------------------------------
 
@@ -219,10 +219,10 @@ script = [
 starting = 0
 get_option(script[starting]['options'])
 # What is happening in this block of code?
-#
+# This block of code is describing different locations in the dictionary of script.
 # What does the get_option function do?
-#
+# it prints the choices that the player has and the description of the location.
 # How would you display the description of the current location?
-#
+# You would put get_option() and put the location you wanted in the parenthesis.
 # How would you display the description of the next location (after selecting an option)?
-#
+# You would do the same thing with each option as named.
